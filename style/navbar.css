@@ -1,0 +1,31 @@
+nav{
+    margin-left: 20px;
+    position: fixed;
+    top: 0;
+}
+.navbar-brand{
+    color:#c4c4c4;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-brand:hover{
+    color: #E7B554 !important;
+}
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item{
+    padding: 10px;  
+}
+ .nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color:#c4c4c4;
+}
+.active a{
+    color:#E7B554;
+}
+a:hover{
+    text-decoration: none;
+  }

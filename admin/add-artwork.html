@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Adding artwork</title>
+</head>
+
+<body>
+    <section>
+        <img src="../img/feather.png" width="90" height="90" class="d-inline-block align-top mt-5" alt="">
+        <div class="title">ADMIN ACCESSIBILITY ONLY - UPDATING ARTWORK</div>
+        <br>
+        <div class="container">
+            ADD NEW ARTWORK TO DATABASE
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form action="javascript:void(0);" method="POST" name="f1" id="f1">
+                        <table>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Artwork name</label></td>
+                                    <td><input type="text" name="name" placeholder="artwork name"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">category</label></td>
+                                    <td><input type="text" name="category" placeholder="artwork category"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Description</label></td>
+                                    <td><input type="text" name="desc" placeholder=""></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">price</label></td>
+                                    <td><input type="text" name="price" placeholder="artwork price"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Artist's ID</label></td>
+                                    <td><input type="number" name="AID" placeholder="artist ID"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Admin ID</label></td>
+                                    <td><input type="text" name="loginid" placeholder="admin ID"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Image link</label></td>
+                                    <td><input type="text" name="ln" placeholder=""></td>
+                                </tr>
+                            </div>
+                            <tr>
+                                <td><button class="button1" name="regiter" type="submit"
+                                        onclick="add();">Submit</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <br><br>DELETE ARTWORK FROM DATABASE
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <form action="javascript:void(0);" method="POST" name="f2" id="f2">
+                                <table>
+                                    <div class="form-group">
+                                        <tr>
+                                            <td><label class="form">Artwork ID</label></td>
+                                            <td><input type="number" name="AWID" placeholder="artwork ID"></td>
+                                        </tr>
+                                    </div>
+                                    <div class="form-group">
+                                        <tr>
+                                            <td><label class="form">name</label></td>
+                                            <td><input type="text" name="name" placeholder="artwork name"></td>
+                                        </tr>
+                                    </div>
+                                    <tr>
+                                        <td><button class="button1" name="regiter" type="submit"
+                                                onclick="del();">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <script>
+        function add() {
+            var r = confirm("Do you want to add new artwork to the database?");
+            if (r == true) {
+                document.getElementById("f1").action = "addartwork.php";
+                document.getElementById("f1").submit();
+            }
+        }
+        function del() {
+            var r = confirm("Are you sure you want to delete from the database?");
+            if (r == true) {
+                document.getElementById("f2").action = "delartwork.php";
+                document.getElementById("f2").submit();
+            }
+        }
+    </script>
+</body>
+<html>

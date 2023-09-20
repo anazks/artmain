@@ -1,0 +1,62 @@
+body {
+background-color: #28272A;
+color:white;
+
+}
+
+nav{
+background-color: #28272A;
+padding-left: 70px;
+}
+.navbar-brand{
+padding-left: 70px;
+color:#c4c4c4;
+}
+.navbar-nav {
+margin-left: 60px;
+}
+section{   
+height: 100vh;
+background-color: #28272A;
+color:#E7B554;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nav-item{
+padding: 10px;  
+}
+.nav-link{
+color: white;
+}
+.nav-link:hover{
+color:#c4c4c4;
+}
+.active a{
+color:#E7B554;
+}
+p{
+font-size: 14px;
+}
+.button{
+    background-color: #E7B554;
+    color: #28272A;
+}
+.footer{
+    padding-top: 30px;
+    background-color: black;
+  }
+  i{
+    color: aliceblue;
+  }
+  .form-ip{
+    background-color: #555557;
+   
+  }
+  .artist{
+    padding-bottom: 20px;
+  }
+.link{
+  color: white;
+  text-decoration: none;
+}

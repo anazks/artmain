@@ -1,0 +1,16 @@
+
+body {
+    background-color: #28272A !important;
+    color:white;
+    overflow: hidden;
+}
+.Product-img img{
+    width: 100%;
+}
+.main-section{        
+    margin-top:60px;
+}
+
+.myorders{
+    color:#E7B554;
+}

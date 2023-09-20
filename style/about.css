@@ -1,0 +1,97 @@
+body {
+    background-color: #28272A;
+    color:white;
+    
+  }
+  
+  nav{
+    background-color: #28272A;
+    padding-left: 70px;
+  }
+  .navbar-brand{
+    padding-left: 70px;
+    color:#c4c4c4;
+  }
+  .navbar-nav {
+    margin-left: 60px;
+  }
+  section{   
+    background-color: #28272A;
+    color:#E7B554;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.nav-item{
+padding: 10px;  
+}
+.nav-link{
+color: white;
+}
+.nav-link:hover{
+color:#c4c4c4;
+}
+.active a{
+color:#E7B554;
+}
+p{
+font-size: 14px;
+}
+.nav-pills {
+padding-right: 100px;
+}
+.nav-pills .nav-link{
+background-color: transparent!important;
+color: white !important;
+}
+.nav-pills .nav-link.active{
+background-color: transparent!important;
+color: #E7B554 !important;
+}
+.grid-container {
+
+display: grid;
+grid-gap: 10px;
+padding: 60px;
+padding-top: 10px;
+padding-left: 150px;
+}
+
+.grid-item{
+position: relative;
+width: 100%;
+}
+.item1 {
+grid-column: 1 ;
+grid-row: 1;
+}
+.item2 {
+grid-column: 2;
+grid-row: 1 ;
+}
+.item3 {
+grid-column: 3;
+grid-row: 1 ;
+}
+.image {
+width: 300px;
+height: 300px;
+}
+.name{
+    color:#E7B554;
+    font-size: 14px;
+}
+.footer{
+  padding-top: 30px;
+  background-color: black;
+}
+i{
+  color: aliceblue;
+}
+.form-ip{
+  background-color: #555557;
+ 
+}
+.artist{
+  padding-bottom: 80px;
+}

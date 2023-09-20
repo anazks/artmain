@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Updating artist</title>
+</head>
+
+<body>
+    <section>
+        <img src="../img/feather.png" width="90" height="90" class="d-inline-block align-top mt-5" alt="">
+        <div class="title">ADMIN ACCESSIBILITY ONLY - UPDATING ARTISTS</div>
+        <br>
+        <div class="container">
+            ADD NEW ARTIST TO DATABASE
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form action="javascript:void(0);" method="POST" name="f1" id="f1">
+                        <table>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Artist name</label></td>
+                                    <td><input type="text" name="name" placeholder="artist name"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Age</label></td>
+                                    <td><input type="number" name="age" placeholder="artist age" required></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Phone number</label></td>
+                                    <td><input type="number" name="phno" placeholder="artist phone  number" required></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                               <tr><td><label for="gender">Select gender</label></td>
+                                <td><select name="gender" id="gender" >
+                                    <option value ="Female">Female</option>
+                                    <option value ="Male">Male</option>
+                                    <option value="Others">Others</option> </td>
+                                </select></tr> 
+                             </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Address(city)</label></td>
+                                    <td><input type="text" name="address" placeholder="Artists's city"></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Email address</label></td>
+                                    <td><input type="email" name="email" placeholder="@gmail.com" required></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Description</label></td>
+                                    <td><input type="text" name="desc" placeholder=""></td>
+                                </tr>
+                            </div>
+                            <div class="form-group">
+                                <tr>
+                                    <td><label class="form">Image link</label></td>
+                                    <td><input type="text" name="ln" placeholder=""></td>
+                                </tr>
+                            </div>
+                            <tr>
+                                <td><button class="button1" name="regiter" type="submit"
+                                        onclick="add();">Submit</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <br><br>DELETE ARTIST FROM DATABASE
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <form action="javascript:void(0);" method="POST" name="f2" id="f2">
+                                <table>
+                                    <div class="form-group">
+                                        <tr>
+                                            <td><label class="form">Artist ID</label></td>
+                                            <td><input type="number" name="AID" placeholder="234"></td>
+                                        </tr>
+                                    </div>
+                                    <div class="form-group">
+                                        <tr>
+                                            <td><label class="form">Artist's email</label></td>
+                                            <td><input type="email" name="email" placeholder="@gmail.com"></td>
+                                        </tr>
+                                    </div>
+                                    <tr>
+                                        <td><button class="button1" name="submit" type="submit"
+                                                onclick="del();">Submit</button></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <script>
+        function add() {
+            var r = confirm("Do you want to add new artist to the database?");
+            if (r == true) {
+                document.getElementById("f1").action = "addartist.php";
+                document.getElementById("f1").submit();
+            }
+        }
+        function del() {
+            var r = confirm("Are you sure you want to delete from the database?");
+            if (r == true) {
+                document.getElementById("f2").action = "delartist.php";
+                document.getElementById("f2").submit();
+            }
+        }
+    </script>
+</body>
+<html>
