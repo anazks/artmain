@@ -15,7 +15,7 @@
           <div class="row p-5">
 
               <div class="col-12 col-md-6">
-                <img src="https://www.deakinco.com/wp-content/uploads/2021/07/Team-is-Ready.jpeg" 
+                <img src="https://media.tate.org.uk/art/images/work/T/T05/T05010_9.jpg" 
                         alt="" 
                         width="100%"
                         height="500px"

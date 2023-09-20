@@ -45,7 +45,7 @@
                    <div style="z-index: 100;position:relative;left:-25px;">
                    <?php
                    if (isset($_SESSION['email'])) {
-                    echo '<a href="profile.php" class="btn btn-warning">Hi, '.$_SESSION['name'].'</a>
+                    echo '<a  class="btn btn-warning">Hi, '.$_SESSION['name'].'</a>
                      <a href="logout.php" class="btn btn-danger">Logout</a>';
                     } else {
                     echo '<a href="login.php" class="btn btn-success" data-target="modal1">Login</a>
