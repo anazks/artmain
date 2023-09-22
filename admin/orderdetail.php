@@ -12,10 +12,55 @@
         .form{
             color:#E7B554 ;
         }
+        th{
+            color:white;
+        }
+        td{
+            color:white;
+        }
     </style>
 </head>
 
-<body>
+<body style="background-color:black">
+<?php
+    $conn = mysqli_connect('localhost', 'root', '', 'artgallery');
+
+    // Check if the connection was successful
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+    // Query to retrieve all Order IDs from the "orders" table
+    $query = "SELECT OID FROM orders";
+    $result = mysqli_query($conn, $query);
+
+    // Check if there are results
+    if (mysqli_num_rows($result) > 0) {
+        echo '<html>
+
+                <body>
+                    <h1 style="color:white">ORDER IDs</h1>
+                    <table border="1">
+                        <tr>
+                            <th>Order ID</th>
+                        </tr>';
+
+        // Loop through the results and display each OID in a table row
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo '<tr><td>' . $row['OID'] . '</td></tr>';
+        }
+
+        echo '</table>
+              </body>
+              </html>';
+    } else {
+        echo "No Order IDs found.";
+    }
+
+    // Close the database connection
+    mysqli_close($conn);
+?>
+
     <section>
         <img src="../img/feather.png" width="90" height="90" class="d-inline-block align-top mt-5" alt="">
         <div class="title">Order details</div>

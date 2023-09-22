@@ -21,7 +21,7 @@
            <div class="col-12 pt-5">
               <h3>Location Information</h3>
            </div>
-            <div class="col-12 col-sm-4 mt-5">
+            <div class="col-1   2 col-sm-4 mt-5">
                    <h5>Our Address</h5>
                     <address style="font-size: 100%">
 		             Art gallery Team<br>

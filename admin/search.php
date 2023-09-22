@@ -1,8 +1,10 @@
 <?php
-        $conn = mysqli_connect('localhost','root','','artgallery');
-        $OID=$_POST['oid'];
-        $query ="SELECT * FROM orders where OID='$OID'";
-        $result1=$conn->query($query);
+    $conn = mysqli_connect('localhost','root','','artgallery');
+    $OID=$_POST['oid'];
+    $query ="SELECT * FROM orders where OID='$OID'";
+    $result1=$conn->query($query);
+
+    if ($result1->num_rows > 0) {
         $row = $result1->fetch_assoc();
         echo '<table bgcolor=#ffffff border="2" cellspacing="5" cellpadding="5"> 
         <tr><td>Order ID : '.$row["OID"].'</td></tr>
@@ -29,13 +31,17 @@
         $row4 = $result4->fetch_assoc();
         echo '<tr><td>Artist name : '.$row4["name"].'<td</tr>
         <tr><td>Email : '.$row4["email"].'</td></tr>';
-        echo '<form action="admin-home.html">
-            <input type="submit" value="home" />
-        </form>';
-        echo '<form action="orderdetail.html">
-            <input type="submit" value="Another order" />
-        </form>';
-        echo '<form action="">
-            <input type="submit" value="print" />
-        </form>';
-        ?>            
+    } else {
+        echo "No results found.";
+    }
+
+    echo '<form action="admin-home.html">
+        <input type="submit" value="home" />
+    </form>';
+    echo '<form action="orderdetail.html">
+        <input type="submit" value="Another order" />
+    </form>';
+    echo '<form action="">
+        <input type="submit" value="print" />
+    </form>';
+?>
