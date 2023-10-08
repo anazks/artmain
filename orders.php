@@ -56,7 +56,7 @@
     
             <tfoot>
                 <td><a href="collection.php" class="btn btn-warning text-white"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-                <td> <?php echo '<a class="btn btn-success" role="button" href="logout.php">Logout</a>'; ?> </td>
+                <!-- <td> <?php echo '<a class="btn btn-success" role="button" href="logout.php">Logout</a>'; ?> </td> -->
             </tr>
         </tfoot>
         </table>

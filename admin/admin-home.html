@@ -10,62 +10,15 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Admin-page</title>
     <style>
-        .title {
-            margin: 50px 0 0;
-            position: relative;
-            right: 600px;
-            bottom: 450px;
-            color: #E7B554;
-            font-size: 100px;
-            text-shadow: 0 1px 0 #E7B554, 0 2px 0 #E7B554, 0 3px 0 #000, 0 4px 0 #b9b9b9, 0 12px 0 #000, 0 6px 1px rgba(0, 0, 0, 0.9), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-            transform: rotate(270deg);
-        }
-
-        .grid-container {
-            margin-top: -200px;
-            margin-left: 60px;
-            display: grid;
-            grid-gap: 10px;
-            padding: 10px;
-            padding: 60px;
-            padding-left: 150px;
-        }
-
-        .grid-item {
-            position: relative;
-            width: 100%;
-        }
-
-        .item1 {
-            grid-column: 1;
-            grid-row: 1;
-        }
-        .item2 {
-            grid-column: 2;
-            grid-row: 1;
-        }
-
-        .item3 {
-            grid-column: 3;
-            grid-row: 1;
-        }
-        .item4 {
-            margin:50px;
-            grid-column: 1;
-            grid-row: 2;
-        }
-        .item5 {
-            margin:50px;
-            grid-column: 2;
-            grid-row: 2;
-        }
-        .item6 {
-            margin:50px;
-            grid-column: 3;
-            grid-row: 2;
-        }
         section{
-            height:100vh;
+            width: 100%;
+            
+        }
+        section .grid-container{
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+            
         }
         a {
             font-family: 'Times New Roman', Times, serif;
@@ -87,7 +40,7 @@
 
 <body>
     <section>
-        <img src="../img/feather.png" width="80" height="80" class="d-inline-block align-top mt-5 ml-5" alt="">
+        <img src="../img/feather.png" width="80" height="80">
         <div class="title">Admin</div>
         <div class="grid-container">
             <div class="grid-item item1">
@@ -96,9 +49,9 @@
             <div class="grid-item item2">
                 <a class="text" href="add-artist.html">ADD/DELETE ARTIST</a>
             </div>
-            <div class="grid-item item3">
+            <!-- <div class="grid-item item3">
                 <a  class="text" href="admin-orders.html">ADD/DELETE ORDERS</a>
-            </div>
+            </div> -->
             <div class="grid-item item4">
                 <a class="text" href="artwork.php">VIEW ALL ARTWORK</a>
              </div>
